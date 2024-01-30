@@ -104,7 +104,7 @@ app.put("/blogs/:id",function(req,res){
 
 //DELETE ROUTE
 app.delete("/blogs/:id", function(req,res){
-    //DESTROY BOLG AND THEN REDIRECT SOMEWHERE
+    //DESTROY BOLG AND THEN you REDIRECT SOMEWHERE
     Blog.findByIdAndRemove(req.params.id , function(err){
         if(err){
             res.redirect("/blogs");

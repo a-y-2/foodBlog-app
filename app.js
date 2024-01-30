@@ -102,7 +102,7 @@ app.put("/blogs/:id",function(req,res){
     });
 });
 
-//DELETE ROUTE
+//DELETE  ROUTE
 app.delete("/blogs/:id", function(req,res){
     //DESTROY BOLG AND THEN REDIRECT SOMEWHERE
     Blog.findByIdAndRemove(req.params.id , function(err){
